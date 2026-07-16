@@ -7,4 +7,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MiniBankingSystem.Application\MiniBankingSystem.Application.csproj" />
+    <ProjectReference Include="..\MiniBankingSystem.Infrastructure\MiniBankingSystem.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
