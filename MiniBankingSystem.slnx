@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="MiniBankingSystem.Application/MiniBankingSystem.Application.csproj" />
+  <Project Path="MiniBankingSystem.ConsoleApp/MiniBankingSystem.ConsoleApp.csproj" />
+  <Project Path="MiniBankingSystem.Domain/MiniBankingSystem.Domain.csproj" />
+  <Project Path="MiniBankingSystem.Infrastructure/MiniBankingSystem.Infrastructure.csproj" />
+</Solution>
