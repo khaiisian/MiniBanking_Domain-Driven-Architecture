@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="../../README.md" />
+  </Folder>
   <Project Path="MiniBankingSystem.Application/MiniBankingSystem.Application.csproj" />
   <Project Path="MiniBankingSystem.ConsoleApp/MiniBankingSystem.ConsoleApp.csproj" />
   <Project Path="MiniBankingSystem.Domain/MiniBankingSystem.Domain.csproj" />
