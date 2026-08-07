@@ -13,7 +13,9 @@ public record AccountId(Guid Value)
 }
 
 // Nature of Primary Constructor.
+
 //public record AccountId(Guid Value);
+
 //The compiler automatically creates
 //- the constructor
 //- the Value property
