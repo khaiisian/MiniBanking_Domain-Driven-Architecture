@@ -97,6 +97,26 @@ Pick the right one by asking: **"How do I know if two of these are the same?"**
 They nest: **Value Objects live inside Entities; Entities group into Aggregates.**
 The **Aggregate Root** is the only "front door" — outside code never reaches inside.
 
+### How do I decide: Entity or Value Object?
+
+Ask one question about the thing:
+
+> **"If two of them have the exact same details, are they the same thing — or still two different things?"**
+
+| Thing | Two with identical details... | So it's a... |
+|---|---|---|
+| A $10 note | ...are interchangeable — nobody cares which | **Value Object** |
+| A bank account | ...are still *different* accounts (two people can both have $0) | **Entity** |
+| The color "red" | ...are the same | **Value Object** |
+| A person | ...are still two different people | **Entity** |
+
+**Shortcut:**
+- Has a unique **ID** and is **tracked over time** (its details change but it stays "the same one")? → **Entity** (`Account`)
+- You only care **what it is**, not **which one**, and it never changes? → **Value Object** (`Money`, `AccountId`)
+
+One more test if stuck: *"Can I change it and have it still be the same thing?"* Yes → **Entity**.
+No — "changing" just means using a different one → **Value Object**.
+
 ---
 
 ## 5. Project Scope & Flow
