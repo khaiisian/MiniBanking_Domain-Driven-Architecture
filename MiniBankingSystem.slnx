@@ -6,4 +6,5 @@
   <Project Path="MiniBankingSystem.ConsoleApp/MiniBankingSystem.ConsoleApp.csproj" />
   <Project Path="MiniBankingSystem.Domain/MiniBankingSystem.Domain.csproj" />
   <Project Path="MiniBankingSystem.Infrastructure/MiniBankingSystem.Infrastructure.csproj" />
+  <Project Path="MiniBankingSystem.WebApi/MiniBankingSystem.WebApi.csproj" Id="1f3c3e1d-f5d6-470f-9838-3d9ea5260047" />
 </Solution>
