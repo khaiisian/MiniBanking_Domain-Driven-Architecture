@@ -18,11 +18,14 @@ public class Account
     //but with with Guid
     //Transfer(customerId, accountId) will also work with not issues
 
+    private Account() { }
+
     private Account (AccountId id, Money balance)
     {
         Id = id;
         Balance = balance;
     }
+
 
     // Open Account
     public static Account Open(string currency)
