@@ -10,7 +10,7 @@ public class BankingDbContext : DbContext
     {
     }
 
-    protected BankingDbContext()
+    public BankingDbContext()
     {
     }
 
