@@ -13,6 +13,7 @@ builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 builder.Services.AddSwaggerGen();
 
+// no db method
 //builder.Services.AddSingleton<IAccountRepository, InMemoryAccountRepository>();
 
 builder.Services.AddDbContext<BankingDbContext>(opt =>
