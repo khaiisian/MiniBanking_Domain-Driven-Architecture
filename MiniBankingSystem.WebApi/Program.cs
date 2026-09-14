@@ -1,5 +1,7 @@
+using Microsoft.EntityFrameworkCore;
 using MiniBankingSystem.Application;
 using MiniBankingSystem.Domain.Repositories;
+using MiniBankingSystem.Infrastructure.Context;
 using MiniBankingSystem.Infrastructure.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,7 +13,14 @@ builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddSingleton<IAccountRepository, InMemoryAccountRepository>();
+//builder.Services.AddSingleton<IAccountRepository, InMemoryAccountRepository>();
+
+builder.Services.AddDbContext<BankingDbContext>(opt =>
+    opt.UseSqlServer(builder.Configuration.GetConnectionString("BankingDb"))
+);
+
+builder.Services.AddScoped<IAccountRepository, AccountRepository>();
+
 builder.Services.AddScoped<AccountService>();
 
 var app = builder.Build();
